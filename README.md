@@ -61,8 +61,8 @@
 | Integrante | Tareas Asignadas |
 |---|---|
 | [Nombre Completo 1] | [Lista de tareas realizadas] |
-| [Nombre Completo 2] | [Lista de tareas realizadas] |
-| [Nombre Completo 3] | [Lista de tareas realizadas] |
+| [Nombre Completo 2] | [Lista de tareas realizadas |
+| Mel Andree, Orellana Rodriguez | Style Guidelines, General Style Guidelines, Web Style Guidelines, Information Architecture, Organization Systems, Labeling Systems, SEO Tags and Meta Tags, Searching Systems, Navigation Systems, Landing Page UI Design, Landing Page Wireframe, Landing Page Mock-up, Web Applications UX/UI Design, Web Applications Wireframes, Web Applications Wireflow Diagrams, Web Applications Mock-ups, Web Applications User Flow Diagrams, Web Applications Prototyping |
 | [Nombre Completo 4] | [Lista de tareas realizadas] |
 | [Nombre Completo 5] | [Lista de tareas realizadas] |
 
