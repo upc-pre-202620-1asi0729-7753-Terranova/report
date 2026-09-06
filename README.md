@@ -774,47 +774,84 @@ Para garantizar consistencia en la arquitectura de información, se definieron p
 
 ### 4.4.3. Web Applications Mock-ups
 
+
+
 ##### 1. Sección de Registro de Usuario (Modal de Selección de Rol y Formulario)
 * **Descripción:** Disposición en contenedor modal centrado sobre rejilla de 6 columnas en modo oscuro que gestiona el alta de usuarios:
   * **Selección de Rol Adaptativo:** Tarjetas interactivas (*Agricultor* y *Comerciante*) con íconos temáticos y estado activo en dorado para personalización del flujo.
   * **Formulario Progresivo Secuencial:** Campos de entrada verticalmente alineados con regla de 8px para captura de datos sin saturación visual.
+ 
+<p align="center">
+  <img src="./assets/chapter-04/mockup_web_register.png" alt="Descripción de la imagen" width="700">
+</p>
+
 
 ##### 2. Sección de Inicio de Sesión (Autenticación Directa y Social)
 * **Descripción:** Layout de columna única enfocado en minimizar la carga cognitiva durante el acceso a la plataforma:
   * **Credenciales Tradicionales:** Inputs de correo y contraseña con opción de revelar texto y enlaces de recuperación de alto contraste.
   * **Acceso Principal Relevante:** Botón institucional de ancho completo en tono dorado para guiar la interacción principal (*CTA*).
 
+<p align="center">
+  <img src="./assets/chapter-04/mockup_web_login.png" alt="Descripción de la imagen" width="700">
+</p>
 
 ##### 3. Sección de Gestión de Parcelas Agrícolas (Dashboard en Grid de Tarjetas)
 * **Descripción:** Cuadrícula de tarjetas que muestra el inventario de terrenos con badges de estado (*Disponible*, *En Producción*, *En Mantenimiento*):
   * **Información Técnica Clave:** Detalle de hectáreas, coordenadas GPS, tipo de suelo y costo por campaña.
   * **Acciones Rápidas:** Opciones directas de edición y eliminación por cada tarjeta, junto al botón principal "Publicar Nueva Parcela".
 
+<p align="center">
+  <img src="./assets/chapter-04/mockup_web_gestion.png" alt="Descripción de la imagen" width="700">
+</p>
+
 ##### 4. Sección de Registro de Nueva Parcela (Formulario Multipaso)
 * **Descripción:** Formulario modular dividido en etapas con indicador de progreso (*Datos Generales*, *Geolocalización*, *Fotografías*):
   * **Geolocalización e Integración de Mapa:** Selección por departamento/provincia e inserción de coordenadas con mapa interactivo.
   * **Carga de Evidencia Visual:** Zona *Drag & Drop* para adjuntar imágenes con vista previa y designación de imagen principal.
+ 
+<p align="center">
+  <img src="./assets/chapter-04/mockup_web_nueva_parcela.png" alt="Descripción de la imagen" width="700">
+</p>
 
 ##### 5. Sección de Perfil de Usuario (Gestión de Datos y Cuenta)
 * **Descripción:** Vista centralizada de la información personal del usuario con opción de actualización de datos:
   * **Header de Identidad:** Fotografía de perfil, nombre, badge de rol (*Agricultor*) y fecha de antigüedad.
   * **Formulario de Datos Personales:** Campos para DNI, teléfono, dirección principal, correo verificado y tipo de cuenta activa.
 
+ 
+<p align="center">
+  <img src="./assets/chapter-04/mockup_web_perfil.png" alt="Descripción de la imagen" width="700">
+</p>
+
 
 ##### 6. Sección de Firma y Confirmación de Contrato (Contratos y Alquileres)
 * **Descripción:** Vista dividida en dos columnas para la lectura legal y la formalización de acuerdos bajo el modelo Escrow:
   * **Visor del Acuerdo Legal:** Mapeo de partes involucradas, cláusulas de arrendamiento y plan de desembolsos por hitos en bloques estructurados.
   * **Panel de Autenticación Digital:** Recuadro de firma manuscrita digital, confirmación de términos de custodia Escrow y botón principal de activación en dorado.
+ 
+ 
+<p align="center">
+  <img src="./assets/chapter-04/mockup_web_contrato.png" alt="Descripción de la imagen" width="700">
+</p>
 
 ##### 7. Sección de Bóveda de Pagos (Custodia Financiera Escrow)
 * **Descripción:** Panel de control para la gestión de custodia y liberación progresiva de fondos vinculados a contratos activos:
   * **Métricas Financieras Generales:** Tarjetas superiores con KPIs de monto total custodias, fondos liberados y saldos pendientes de aprobación.
   * **Línea de Tiempo de Hitos:** Flujo secuencial de 4 etapas (*Suelo*, *Siembra*, *Desarrollo*, *Cosecha*) con conectores y badges de estado (*Completado*, *En Revisión*, *Bloqueado*).
 
+<p align="center">
+  <img src="./assets/chapter-04/mockup_web_pagos.png" alt="Descripción de la imagen" width="700">
+</p>
+
+
 ##### 8. Sección de Monitoreo Agronómico y Riesgo Climático (Alertas Climáticas)
 * **Descripción:** Dashboard de seguimiento ambiental en tiempo real orientado a la prevención de riesgos agrícolas:
   * **Tarjetas de Sensores Ambientales:** Visualización de temperatura, humedad, precipitación y viento con micro-gráficos de tendencia.
   * **Feed de Alertas Jerarquizado:** Contenedores de riesgo clasificados por color y nivel de severidad (*Crítica*, *Moderada*, *Normal*) para actuación inmediata.
+
+<p align="center">
+  <img src="./assets/chapter-04/mockup_web_clima.png" alt="Descripción de la imagen" width="700">
+</p>
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
