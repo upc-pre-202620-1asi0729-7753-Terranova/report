@@ -959,12 +959,24 @@ A continuación, se presentan los enlaces y capturas de los videos explicativos 
 
 ##### 1. Prototipo Desktop Web – Flujo Principal de Gestión y Custodia Escrow
 * **Descripción del Video:** Explicación detallada de la experiencia en pantalla completa, abarcando desde la autenticación por roles, la exploración de parcelas agrícolas en grid, hasta la firma digital de acuerdos y la liberación de fondos por hitos en la Bóveda de Pagos.
-* **Captura de Pantalla:**  
+* **Captura de Pantalla:**
+  
+  <p align="center">
+  <img src="./assets/chapter-04/prototipo_desktop.png" alt="Descripción de la imagen" width="700">
+</p>
+
+* * **Link del Prototipo:** [Link del Prototipo Web](https://www.figma.com/proto/qdN2BmM77AaLFlq5OyFSyD/Untitled?node-id=85-504&t=DTHiWfYH71axACfB-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=123%3A494&show-proto-sidebar=1)
 * **Enlace al Video:** [Ver Demostración Desktop Web en Microsoft Stream](https://stream.microsoft.com/enlace-al-video-desktop)
 
 ##### 2. Prototipo Mobile Web Browser – Adaptabilidad y Monitoreo en Campo
 * **Descripción del Video:** Demostración de la respuesta adaptativa en navegadores móviles, enfocada en la facilidad de uso para agricultores en campo: consulta de alertas climáticas en tiempo real, navegación táctil y carga directa de fotografías.
-* **Captura de Pantalla:**  
+* **Captura de Pantalla:**
+  
+  <p align="center">
+  <img src="./assets/chapter-04/prototipo_movil.png" alt="Descripción de la imagen" width="700">
+</p>
+
+* * * **Link del Prototipo:** [Link del Prototipo Movil](https://www.figma.com/proto/qdN2BmM77AaLFlq5OyFSyD/Untitled?node-id=257-10099&t=g4J1J50GPL689wBS-1&scaling=scale-down&content-scaling=fixed&page-id=236%3A5996)
 * **Enlace al Video:** [Ver Demostración Mobile Web en Microsoft Stream](https://stream.microsoft.com/enlace-al-video-mobile)
 
 
