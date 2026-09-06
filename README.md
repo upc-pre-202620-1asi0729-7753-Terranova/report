@@ -495,6 +495,11 @@ En esta sección se presenta la propuesta de diseño de interfaz de usuario (UI)
 Para lograr una experiencia visual limpia y profesional, se aplicaron principios de jerarquía visual clara, tipografía legible y una paleta de colores inspirada en el sector agrícola con acentos dinámicos para los llamados a la acción (CTA). Cada sección de la página sigue una secuencia lógica orientada a la conversión y al descubrimiento progresivo, transformando conceptos técnicos complejos como la verificación de hitos en campo y la liberación gradual de fondos en componentes visuales comprensibles y estructurados.
 
 
+
+
+
+
+
 ### 4.3.1. Landing Page Wireframe
 
 #### Descripción Detallada de las Secciones del Wireframe
@@ -548,6 +553,12 @@ Para lograr una experiencia visual limpia y profesional, se aplicaron principios
 En esta sección se presentan y explican los diseños de alta fidelidad (*mock-ups*) desarrollados para la *Landing Page* de **ALLPATEK**, abarcan tanto la versión para navegadores de escritorio (*Desktop Web Browser*) como para dispositivos móviles (*Mobile Web Browser*). La propuesta gráfica materializa la arquitectura de información y la estructura de los *wireframes* previamente definidos, aplicando rigurosamente los principios de diseño visual, accesibilidad e inclusión, e integrando la identidad del *Design System* oficial de la plataforma.
 
 
+<p align="center">
+  <img src="./assets/chapter-04/image_header_mockup.png" alt="Descripción de la imagen" width="700">
+</p>
+
+
+
 #### 1. Aplicación del Design System y Lenguaje Visual
 
 * **Paleta de Colores Agrónoma:** Se utiliza una combinación de verdes profundos (tonos corporativos de **ALLPATEK**) para proyectar solidez y naturaleza, combinados con acentos en tonos ámbar/amarillo para los botones de acción principal (CTA) y estados de alerta, garantizando un punto focal inmediato de interacción.
@@ -568,9 +579,10 @@ En esta sección se presentan y explican los diseños de alta fidelidad (*mock-u
 
 #### 3. Presentación de los Mock-ups de Alta Fidelidad
 
-> **[Figura 4.2: Mock-up de la Landing Page de ALLPATEK - Vista Desktop]**
+<p align="center">
+  <img src="./assets/chapter-04/mockup_completo.png" alt="Descripción de la imagen" width="700">
+</p>
 
-> **[Figura 4.3: Mock-up de la Landing Page de ALLPATEK - Vista Mobile]**
 
 
 
@@ -580,17 +592,54 @@ En esta sección se presentan y explican los diseños de alta fidelidad (*mock-u
 * **Desktop:** Barra fija con fondo semi-transparente (*backdrop blur*) que mantiene visible el logotipo en alta resolución, las opciones del menú con micro-interacciones al pasar el cursor (*hover*) y el botón *Empieza Ahora*.
 * **Mobile:** Menú compacto con icono hamburguesa que despliega una lista de opciones accesible a pantalla completa.
 
-##### B. Sección de Impacto (*Hero Section*)
-* **Composición:** Título de alto contraste acompañado de imágenes reales de campos de cultivo gestionados. Incluye las tarjetas de métricas cuantitativas (*100% Pagos protegidos*, *0% Riesgo de estafa*) resaltadas con bordes verdes e iconos ilustrativos.
+<p align="center">
+  <img src="./assets/chapter-04/image_header_mockup.png" alt="Descripción de la imagen" width="700">
+</p>
+
+<p align="center">
+  <img src="./assets/chapter-04/phone1.png" alt="Descripción de la imagen" width="700">
+</p>
+
+
+
+##### B. Sección de Servicios y Funcionalidades Principales
+* **Composición:** Distribución en cuadrícula (bento grid) estructurada mediante un titular principal ("Producción agrícola garantizada, de la tierra a tu negocio") y un subtítulo explicativo del modelo de negocio. Alterna tarjetas informativas funcionales con imágenes aéreas reales de campos agrícolas gestionados.
+
+
+<p align="center">
+  <img src="./assets/chapter-04/image_servicio_mockup.png" alt="Descripción de la imagen" width="700">
+</p>
+
+<p align="center">
+  <img src="./assets/chapter-04/phone2.png" alt="Descripción de la imagen" width="700">
+</p>
+
+  
 
 ##### C. Módulo de Servicios y Custodia Escrow
 * **Visualización de Tarjetas:** Las características de selección de parcelas, custodia financiera y monitoreo se representan mediante tarjetas con iconos a color, sombras de elevación y jerarquía de texto clara.
 * **Flujo del Modelo por Hitos:** Diagrama interactivo paso a paso con conectores visuales que muestran el ciclo de vida del contrato desde el depósito inicial hasta la entrega de la cosecha.
 
+<p align="center">
+  <img src="./assets/chapter-04/image_hitos_mockup.png" alt="Descripción de la imagen" width="700">
+</p>
+
+<p align="center">
+  <img src="./assets/chapter-04/phone3.png" alt="Descripción de la imagen" width="700">
+</p>
+
+
 ##### D. Planes de Producción y Cotización
 * **Cuadro Comparativo de Planes:** Tarjetas de suscripción (*Básico*, *Pro*, *Empresarial*) donde la opción recomendada (*Pro*) se resalta mediante un borde distintivo y un indicador visual de *"Más Popular"*.
 * **Formulario de Propuesta Técnica:** Bloque final con campos de entrada definidos (*inputs* con etiquetas claras y validación visual) para solicitar cotizaciones personalizadas.
 
+<p align="center">
+  <img src="./assets/chapter-04/image_planes_mockup.png" alt="Descripción de la imagen" width="700">
+</p>
+
+<p align="center">
+  <img src="./assets/chapter-04/phone5.png" alt="Descripción de la imagen" width="700">
+</p>
 
 
 ## 4.4. Web Applications UX/UI Design
