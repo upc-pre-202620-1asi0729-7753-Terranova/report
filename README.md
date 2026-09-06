@@ -687,11 +687,229 @@ Esta sección presenta la propuesta de diseño visual y de interacción desarrol
 
 
 ### 4.4.1. Web Applications Wireframes
+
+
+Esta sección presenta los esquemas de baja y media fidelidad (wireframes) diseñados para las aplicaciones móviles del sistema, estructurados como base estructural y funcional previa al desarrollo de alta fidelidad.
+
+#### Criterios de Diseño y Fundamentos Estructurales
+
+* **Arquitectura de Información y Flujo Móvil:**
+  * **Navegación Táctil Persistente:** Implementación de una barra de navegación inferior (*Bottom Navigation Bar*) con acceso directo a las vistas principales (*Inicio/Parcelas*, *Contratos*, *Pagos*, *Clima*), manteniendo al usuario ubicado espacialmente sin sobrecargar la pantalla.
+  * **Disposición Vertical de Contenidos:** Distribución secuencial de tarjetas y bloques para favorecer el desplazamiento vertical (*Scroll*) natural en una sola mano.
+
+* **Principios y Elementos de Diseño (UI/Layout):**
+  * **Rejilla Móvil:** Maquetado sobre un layout de **4 columnas** con márgenes laterales de $16\text{px}$ y *gutters* de $16\text{px}$, asegurando alineación limpia.
+  * **Espaciado Escalar (8px Grid):** Aplicación de márgenes internos de $8\text{px}$, $16\text{px}$ y $24\text{px}$ en tarjetas y contenedores para mantener jerarquía visual y separación clara entre bloques.
+  * **Wireframing Neutral:** Uso exclusivo de escalas de grises para validar la estructura, contenido y contraste sin la distracción de elementos estéticos.
+
+* **Diseño Inclusivo y Accesibilidad (WCAG 2.1 AA):**
+  * **Zonas de Contacto Táctil (*Touch Targets*):** Todos los componentes interactivos (botones, campos de texto e íconos) respetan un área mínima de $44\times44\text{px}$ para evitar clics accidentales en dispositivos móviles.
+  * **Claridad Tipográfica y Contraste:** Uso de tipografías legibles con contraste en escala de grises superior a $4.5:1$ en textos principales e inclusión de etiquetas (*labels*) permanentes en los formularios.
+
+
+#### Estructura de Wireframes Móviles
+
+##### 1. Wireframe: Autenticación y Selección de Rol
+* **Descripción:** Esquema en pantalla única enfocado en el ingreso rápido de credenciales y selección de perfil:
+  * **Contenedor Principal:** Módulo centrado con campos de entrada en bloque y botones sociales secundarios en la base.
+  * **Selector de Rol:** Botones de opción amplia para conmutar entre *Agricultor* y *Comerciante B2B* antes del alta.
+
+##### 2. Wireframe: Dashboard Móvil de Parcelas
+* **Descripción:** Vista principal del inventario agrícola organizada para escaneo rápido:
+  * **Buscador Superior:** Campo de búsqueda y filtrado por ubicación fija en la zona superior.
+  * **Listado de Tarjetas (*Cards*):** Contenedores individuales que representan cada terreno, con espacios reservados para fotografía, estado, extensión y costo.
+
+##### 3. Wireframe: Monitoreo Climático y Alertas
+* **Descripción:** Estructura modular de lectura rápida para condiciones de campo:
+  * **Métricas Principales (KPIs):** Cuadrícula de 2x2 para indicadores clave (*Temperatura*, *Humedad*, *Lluvia*, *Viento*).
+  * **Lista de Alertas:** Bloques horizontales jerarquizados con ícono indicador y espacio para texto explicativo sobre el nivel de riesgo.
+
+
 ### 4.4.2. Web Applications Wireflow Diagrams
+
+
+En esta sección se presentan los diagramas de **Wireflow**, los cuales combinan la estructura de los *wireframes* con la secuencia de un *user flow* para representar la interacción y el cambio de estado de la pantalla en cada paso de la navegación. 
+
+Para garantizar consistencia en la arquitectura de información, se definieron previamente los *Task Flows* correspondientes a las rutas críticas de nuestros User Personas (**Agricultor** y **Comerciante B2B**), modelando explícitamente cada cambio de estado visual (efecto de selección, apertura de modales o actualización de badges) como un paso independiente con su respectivo wireframe.
+
+
+
+#### Wireflow 1: Registro de Parcela y Publicación en la Plataforma
+* **User Persona:** Alejandro Mendoza (Agricultor)
+* **User Goal:** Publicar una nueva parcela agrícola registrando sus datos técnicos, ubicación GPS y fotos para ponerla a disposición de comerciantes B2B.
+
+##### Explanación del Flujo:
+1. **Paso 1 (Dashboard de Parcelas - Estado Inicial):** El usuario accede a la vista de *Gestión de Parcelas* y hace clic en el botón principal (*CTA*) "Publicar Nueva Parcela".
+2. **Paso 2 (Formulario Multipaso - Paso 1: Datos Generales):** Se despliega el wireframe del formulario. El usuario ingresa nombre, área (Ha), tipo de suelo y costo. Al completar, acciona "Siguiente".
+3. **Paso 3 (Formulario Multipaso - Paso 2: Geolocalización):** La pantalla cambia al estado de ubicación. El usuario selecciona departamento, provincia, distrito y presiona "Obtener Ubicación", lo que actualiza el mapa con la marca de coordenadas GPS.
+4. **Paso 4 (Formulario Multipaso - Paso 3: Carga de Evidencia):** Muestra la zona *Drag & Drop*. El usuario sube los fotogramas; la pantalla se actualiza mostrando las miniaturas de las fotos y permitiendo designar la *Foto Principal*.
+5. **Paso 5 (Confirmación y Actualización de Dashboard):** El usuario hace clic en "Guardar y Publicar Parcela". El flujo retorna al Dashboard, mostrando la nueva tarjeta agregada con el badge en estado *Disponible*.
+
+
+
+#### Wireflow 2: Contratación y Firma Digital del Acuerdo Escrow
+* **User Persona:** María Chen (Comerciante B2B)
+* **User Goal:** Revisar los términos legales de un contrato de arrendamiento agrícola y formalizar el acuerdo mediante firma digital para activar la custodia de fondos.
+
+##### Explicación del Flujo:
+1. **Paso 1 (Detalle del Contrato - Estado Pendiente):** El usuario navega al módulo *Contratación* y selecciona un contrato en estado *Pendiente de Firma*.
+2. **Paso 2 (Lectura y Verificación de Cláusulas):** Revisa el visor de contrato (partes involucradas, área de terreno y plan de desembolsos por hitos Escrow).
+3. **Paso 3 (Captura de Firma Digital):** El usuario interactúa con el recuadro de firma (*Canvas*). Al dibujar su rúbrica táctil/mouse, el componente cambia de estado mostrando la firma renderizada y habilitando la casilla de verificación.
+4. **Paso 4 (Aceptación de Términos):** Se marca la casilla "Acepto los términos y condiciones de custodia Escrow", activando visualmente el botón "Firmar y Activar Contrato".
+5. **Paso 5 (Estado Final - Contrato Activo):** Tras procesar la firma, la pantalla cambia al estado de *Contrato Activo*, deshabilitando la edición y redirigiendo al usuario al panel de seguimiento de la Bóveda de Pagos.
+
+
+
+#### Wireflow 3: Monitoreo Climático y Gestión de Alerta Crítica
+* **User Persona:** Alejandro Mendoza (Agricultor)
+* **User Goal:** Consultar el estado agronómico del cultivo y revisar una alerta ambiental para tomar medidas preventivas en campo.
+
+##### Explicación del Flujo:
+1. **Paso 1 (Navegación al Módulo Climático):** El usuario hace clic en "Alertas Climáticas" desde la barra de navegación lateral.
+2. **Paso 2 (Lectura de KPIs de Sensores):** Visualiza las tarjetas de *Temperatura*, *Humedad*, *Precipitación* y *Viento* con sus indicadores de rango óptimo.
+3. **Paso 3 (Identificación de Alerta Crítica):** El usuario detecta la primera tarjeta del feed de alertas resaltada en rojo (*Alerta de Helada - Riesgo Crítico*).
+4. **Paso 4 (Interacción de Expansión/Detalle):** Al hacer clic sobre el contenedor de la alerta, la tarjeta cambia de estado colapsado a expandido, desplegando recomendaciones agronómicas directas y la fuente del reporte.
+
+
+
 ### 4.4.3. Web Applications Mock-ups
+
+##### 1. Sección de Registro de Usuario (Modal de Selección de Rol y Formulario)
+* **Descripción:** Disposición en contenedor modal centrado sobre rejilla de 6 columnas en modo oscuro que gestiona el alta de usuarios:
+  * **Selección de Rol Adaptativo:** Tarjetas interactivas (*Agricultor* y *Comerciante*) con íconos temáticos y estado activo en dorado para personalización del flujo.
+  * **Formulario Progresivo Secuencial:** Campos de entrada verticalmente alineados con regla de 8px para captura de datos sin saturación visual.
+
+##### 2. Sección de Inicio de Sesión (Autenticación Directa y Social)
+* **Descripción:** Layout de columna única enfocado en minimizar la carga cognitiva durante el acceso a la plataforma:
+  * **Credenciales Tradicionales:** Inputs de correo y contraseña con opción de revelar texto y enlaces de recuperación de alto contraste.
+  * **Acceso Principal Relevante:** Botón institucional de ancho completo en tono dorado para guiar la interacción principal (*CTA*).
+
+
+##### 3. Sección de Gestión de Parcelas Agrícolas (Dashboard en Grid de Tarjetas)
+* **Descripción:** Cuadrícula de tarjetas que muestra el inventario de terrenos con badges de estado (*Disponible*, *En Producción*, *En Mantenimiento*):
+  * **Información Técnica Clave:** Detalle de hectáreas, coordenadas GPS, tipo de suelo y costo por campaña.
+  * **Acciones Rápidas:** Opciones directas de edición y eliminación por cada tarjeta, junto al botón principal "Publicar Nueva Parcela".
+
+##### 4. Sección de Registro de Nueva Parcela (Formulario Multipaso)
+* **Descripción:** Formulario modular dividido en etapas con indicador de progreso (*Datos Generales*, *Geolocalización*, *Fotografías*):
+  * **Geolocalización e Integración de Mapa:** Selección por departamento/provincia e inserción de coordenadas con mapa interactivo.
+  * **Carga de Evidencia Visual:** Zona *Drag & Drop* para adjuntar imágenes con vista previa y designación de imagen principal.
+
+##### 5. Sección de Perfil de Usuario (Gestión de Datos y Cuenta)
+* **Descripción:** Vista centralizada de la información personal del usuario con opción de actualización de datos:
+  * **Header de Identidad:** Fotografía de perfil, nombre, badge de rol (*Agricultor*) y fecha de antigüedad.
+  * **Formulario de Datos Personales:** Campos para DNI, teléfono, dirección principal, correo verificado y tipo de cuenta activa.
+
+
+##### 6. Sección de Firma y Confirmación de Contrato (Contratos y Alquileres)
+* **Descripción:** Vista dividida en dos columnas para la lectura legal y la formalización de acuerdos bajo el modelo Escrow:
+  * **Visor del Acuerdo Legal:** Mapeo de partes involucradas, cláusulas de arrendamiento y plan de desembolsos por hitos en bloques estructurados.
+  * **Panel de Autenticación Digital:** Recuadro de firma manuscrita digital, confirmación de términos de custodia Escrow y botón principal de activación en dorado.
+
+##### 7. Sección de Bóveda de Pagos (Custodia Financiera Escrow)
+* **Descripción:** Panel de control para la gestión de custodia y liberación progresiva de fondos vinculados a contratos activos:
+  * **Métricas Financieras Generales:** Tarjetas superiores con KPIs de monto total custodias, fondos liberados y saldos pendientes de aprobación.
+  * **Línea de Tiempo de Hitos:** Flujo secuencial de 4 etapas (*Suelo*, *Siembra*, *Desarrollo*, *Cosecha*) con conectores y badges de estado (*Completado*, *En Revisión*, *Bloqueado*).
+
+##### 8. Sección de Monitoreo Agronómico y Riesgo Climático (Alertas Climáticas)
+* **Descripción:** Dashboard de seguimiento ambiental en tiempo real orientado a la prevención de riesgos agrícolas:
+  * **Tarjetas de Sensores Ambientales:** Visualización de temperatura, humedad, precipitación y viento con micro-gráficos de tendencia.
+  * **Feed de Alertas Jerarquizado:** Contenedores de riesgo clasificados por color y nivel de severidad (*Crítica*, *Moderada*, *Normal*) para actuación inmediata.
+
 ### 4.4.4. Web Applications User Flow Diagrams
 
+Esta sección presenta la propuesta formal de **User Flows** mapeados a partir de los diagramas de Wireflow previamente validados. Cada flujo integra los *Mock-ups* finales de alta fidelidad para representar la experiencia visual definitiva, definiendo con claridad tanto la ruta principal o esperada (*Happy Path*) como las decisiones y rutas de excepción (*Unhappy Paths*).
+
+
+#### User Flow 1: Registro de Parcela Agrícola y Publicación en Plataforma
+
+* **User Persona:** Alejandro Mendoza (Agricultor)
+* **User Goal:** Publicar una nueva parcela en el catálogo para ponerla a disposición de comerciantes B2B, garantizando la carga correcta de datos técnicos, coordenadas GPS y fotos del terreno.
+
+##### Explicación del Flujo y Condiciones:
+
+* **Happy Path (Ruta Esperada):**
+  1. **Inicio:** El usuario ingresa a *Gestión de Parcelas* y presiona el *CTA* "Publicar Nueva Parcela".
+  2. **Paso 1 (Datos Generales):** Completa exitosamente el nombre, área en hectáreas, tipo de suelo y costo/campaña. Presiona "Siguiente".
+  3. **Paso 2 (Geolocalización):** Selecciona departamento, provincia, distrito y presiona "Obtener Ubicación". El sistema valida las coordenadas GPS y renderiza el mapa.
+  4. **Paso 3 (Fotografías):** Adjunta al menos 3 imágenes mediante *Drag & Drop*, asigna la *Foto Principal* y selecciona "Guardar y Publicar Parcela".
+  5. **Resultado:** El sistema valida los datos y redirige al Dashboard, mostrando la tarjeta en estado *Disponible*.
+
+* **Unhappy Paths (Rutas Alternativas y Excepciones):**
+  * **Datos Incompletos o Formato Inválido (Paso 1):** Si el usuario deja campos requeridos vacíos o ingresa un costo no numérico, el botón "Siguiente" permanece deshabilitado o el input genera un borde de error en rojo.
+  * **Error de Geolocalización / Coordenadas Nulas (Paso 2):** Si el navegador o dispositivo no tiene permisos de GPS activados, la plataforma muestra un *Banner de Advertencia* solicitando la selección manual en el mapa o el reintento de la geolocalización.
+  * **Formato o Peso de Imagen No Permitido (Paso 3):** Si se intenta subir un archivo distinto a JPG/PNG o que supere el tamaño máximo ($5\text{MB}$), el contenedor de carga muestra un mensaje de alerta y no procesa el archivo hasta ser reemplazado.
+
+
+
+#### User Flow 2: Formalización y Firma Digital del Contrato Escrow
+
+* **User Persona:** María Chen (Comerciante B2B)
+* **User Goal:** Revisar y firmar digitalmente un contrato de arrendamiento agrícola para proceder al bloqueo e inicio de la custodia de fondos en la Bóveda de Pagos.
+
+##### Explicación del Flujo y Condiciones:
+
+* **Happy Path (Ruta Esperada):**
+  1. **Inicio:** La usuaria navega al módulo *Contratación* y hace clic en una propuesta con estado *Pendiente de Firma*.
+  2. **Revisión del Acuerdo:** Examina el visor de contrato (partes, cláusulas y plan de desembolsos por hitos Escrow).
+  3. **Rúbrica Digital:** Dibuja su firma en el recuadro interactivo (*Canvas*).
+  4. **Aceptación y Confirmación:** Marca la casilla de verificación de términos Escrow y presiona el botón "Firmar y Activar Contrato".
+  5. **Resultado:** El sistema registra la firma, cambia el estado a *Contrato Activo* y habilita la visualización de la línea de tiempo en la *Bóveda de Pagos*.
+
+* **Unhappy Paths (Rutas Alternativas y Excepciones):**
+  * **Firma No Realizada / Canvas Vacío:** Si la usuaria marca la casilla de términos pero no dibuja la firma en el recuadro, el botón "Firmar y Activar Contrato" se mantiene en estado deshabilitado.
+  * **Rechazo o Solicitud de Corrección:** Si la usuaria identifica un error en los montos o hectáreas del acuerdo, puede seleccionar la acción secundaria "Rechazar / Solicitar Modificación", abriendo un modal para enviar observaciones al Agricultor y pausar el flujo.
+
+
+#### User Flow 3: Consulta de Monitoreo Climático y Gestión de Alerta
+
+* **User Persona:** Alejandro Mendoza (Agricultor)
+* **User Goal:** Evaluar las métricas ambientales de sus parcelas y revisar detalles de alertas críticas para tomar decisiones preventivas sobre sus cultivos.
+
+##### Explicación del Flujo y Condiciones:
+
+* **Happy Path (Ruta Esperada):**
+  1. **Inicio:** El usuario accede al menú lateral y selecciona "Alertas Climáticas".
+  2. **Lectura de Sensores:** Revisa los KPIs de *Temperatura*, *Humedad*, *Precipitación* y *Viento*.
+  3. **Identificación de Alerta:** Selecciona la primera tarjeta del feed (*Alerta de Helada - Riesgo Crítico*).
+  4. **Visualización de Recomendación:** La tarjeta expande su contenido, mostrando el diagnóstico técnico y el protocolo de acción sugerido.
+
+* **Unhappy Paths (Rutas Alternativas y Excepciones):**
+  * **Pérdida de Conexión de Sensores / Datos Desactualizados:** Si las estaciones meteorológicas no envían señal, las tarjetas de KPI muestran un estado *Offline* con la última hora de sincronización y un botón de "Reintentar Lectura".
+
+
 ## 4.5. Web Applications Prototyping
+
+En esta sección se presentan los prototipos interactivos de alta fidelidad desarrollados para navegadores **Desktop** y **Mobile Web**, los cuales simulan la experiencia real de navegación acorde a los trayectos definidos en los *User Flow Diagrams*. 
+
+#### Criterios para las Decisiones de Interacción y Arquitectura de Información
+
+La estrategia de interacción de **ALLPATEK** se diseñó bajo un enfoque enfocado en el usuario y orientado a tareas, asegurando una transición fluida desde el primer contacto hasta las operaciones avanzadas del sistema:
+
+* **Relación con la Arquitectura de Información:** 
+  * **Sistema de Navegación Persistente:** Se implementó una barra lateral (*Sidebar*) en Desktop y un menú colapsable (*Drawer/Hamburger*) en Mobile Web. Esta estructura garantiza que el usuario mantenga claridad de su ubicación espacial (*Breadcrumbs mentales*) y pueda alternar sin fricción entre módulos clave como *Gestión de Parcelas*, *Bóveda de Pagos Escrow* y *Alertas Climáticas*.
+  * **Jerarquía de Visualización Contenida:** El contenido se organiza modularmente mediante tarjetas interactivas (*Cards UI*) y tablas de datos que colapsan/expanden información técnica según la densidad requerida por cada dispositivo.
+
+* **Tipos de Interacciones Seleccionadas:**
+  * **Microinteracciones y Feedback Inmediato:** Se incorporaron variantes de componentes en Figma para estados *Hover*, *Focus*, *Pressed* y *Active*. Los botones principales y tarjetas cambian de elevación y tono al interactuar, proporcionando retroalimentación visual inmediata.
+  * **Interacciones de Flujo Guiado:** Para procesos complejos como la *Firma de Contratos* y la *Carga de Evidencia en Nuevas Parcelas*, se emplearon patrones de interacción progresiva (*Step-by-step Steppers* y zonas de *Drag & Drop*), reduciendo la carga cognitiva.
+  * **Navegación Táctil y Enfoque Adaptativo:** En la versión Mobile Web, los puntos de contacto (*Touch Targets*) se mantuvieron por encima del área mínima de $44\times44\text{px}$, optimizando gestos de desplazamiento vertical (*Scroll*) y selección rápida sin sacrificar contraste ni legibilidad.
+
+
+#### Demostración y Flujos de Interacción en Video
+
+A continuación, se presentan los enlaces y capturas de los videos explicativos subidos a Microsoft Stream, donde se demuestra el recorrido de usuario y las validaciones del prototipo:
+
+##### 1. Prototipo Desktop Web – Flujo Principal de Gestión y Custodia Escrow
+* **Descripción del Video:** Explicación detallada de la experiencia en pantalla completa, abarcando desde la autenticación por roles, la exploración de parcelas agrícolas en grid, hasta la firma digital de acuerdos y la liberación de fondos por hitos en la Bóveda de Pagos.
+* **Captura de Pantalla:**  
+* **Enlace al Video:** [Ver Demostración Desktop Web en Microsoft Stream](https://stream.microsoft.com/enlace-al-video-desktop)
+
+##### 2. Prototipo Mobile Web Browser – Adaptabilidad y Monitoreo en Campo
+* **Descripción del Video:** Demostración de la respuesta adaptativa en navegadores móviles, enfocada en la facilidad de uso para agricultores en campo: consulta de alertas climáticas en tiempo real, navegación táctil y carga directa de fotografías.
+* **Captura de Pantalla:**  
+* **Enlace al Video:** [Ver Demostración Mobile Web en Microsoft Stream](https://stream.microsoft.com/enlace-al-video-mobile)
+
 
 ## 4.6. Domain-Driven Software Architecture
 ### 4.6.1. Design-Level Event Storming
