@@ -691,6 +691,12 @@ Esta sección presenta la propuesta de diseño visual y de interacción desarrol
 
 Esta sección presenta los esquemas de baja y media fidelidad (wireframes) diseñados para las aplicaciones móviles del sistema, estructurados como base estructural y funcional previa al desarrollo de alta fidelidad.
 
+ <p align="center">
+  <img src="./assets/chapter-04/wireframe_completo.png" alt="Descripción de la imagen" width="700">
+</p>
+
+  
+
 #### Criterios de Diseño y Fundamentos Estructurales
 
 * **Arquitectura de Información y Flujo Móvil:**
@@ -714,16 +720,30 @@ Esta sección presenta los esquemas de baja y media fidelidad (wireframes) dise�
   * **Contenedor Principal:** Módulo centrado con campos de entrada en bloque y botones sociales secundarios en la base.
   * **Selector de Rol:** Botones de opción amplia para conmutar entre *Agricultor* y *Comerciante B2B* antes del alta.
 
+ <p align="center">
+  <img src="./assets/chapter-04/wireframe_web_autentication.png" alt="Descripción de la imagen" width="700">
+</p>
+
+  
+
 ##### 2. Wireframe: Dashboard Móvil de Parcelas
 * **Descripción:** Vista principal del inventario agrícola organizada para escaneo rápido:
   * **Buscador Superior:** Campo de búsqueda y filtrado por ubicación fija en la zona superior.
   * **Listado de Tarjetas (*Cards*):** Contenedores individuales que representan cada terreno, con espacios reservados para fotografía, estado, extensión y costo.
+
+ <p align="center">
+  <img src="./assets/chapter-04/wireframe_web_parcelas.png" alt="Descripción de la imagen" width="700">
+</p>
+
 
 ##### 3. Wireframe: Monitoreo Climático y Alertas
 * **Descripción:** Estructura modular de lectura rápida para condiciones de campo:
   * **Métricas Principales (KPIs):** Cuadrícula de 2x2 para indicadores clave (*Temperatura*, *Humedad*, *Lluvia*, *Viento*).
   * **Lista de Alertas:** Bloques horizontales jerarquizados con ícono indicador y espacio para texto explicativo sobre el nivel de riesgo.
 
+ <p align="center">
+  <img src="./assets/chapter-04/wireframe_web_clima.png" alt="Descripción de la imagen" width="700">
+</p>
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
