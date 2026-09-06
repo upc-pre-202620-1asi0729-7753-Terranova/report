@@ -508,8 +508,19 @@ Para lograr una experiencia visual limpia y profesional, se aplicaron principios
 * **Descripción:** Ubicado en la parte superior fija (*Sticky Header*). Contiene el logotipo institucional de **ALLPATEK** alineado a la izquierda, el menú de navegación horizontal (*Servicios*, *¿Cómo funciona?*, *Testimonios*, *Planes*, *Contacto*) y el botón de acción principal (*Empieza Ahora* / *Iniciar Sesión*) destacado a la derecha. En la versión móvil, los enlaces se recogen dentro de un menú hamburguesa desplegable.
 
 
+<p align="center">
+  <img src="./assets/chapter-04/wireframe_navbar.png" alt="Descripción de la imagen" width="1200">
+</p>
+
+
 ##### 2. Sección Principal (Hero Section)
 * **Descripción:** Primera vista que recibe al usuario. Presenta la propuesta de valor con un titular de alto impacto (*"Producción agrícola garantizada, de la tierra a tu negocio"*), seguido de una bajada descriptiva que explica la conexión entre compradores B2B y agricultores. Incluye un llamado a la acción primario (*Cotizar Parcela*) y un bloque destacado con cuatro métricas cuantitativas clave (100% Pagos protegidos, 0% Riesgo de estafa, 15+ Hectáreas gestionadas, 25% Ahorro promedio).
+
+
+
+<p align="center">
+  <img src="./assets/chapter-04/wireframe_hero.png" alt="Descripción de la imagen" width="800">
+</p>
 
 ##### 3. Sección de Servicios y Propuestas de Valor (Grid de Tarjetas)
 * **Descripción:** Disposición en cuadrícula de tarjetas interactivas que resumen los pilares operativos de la plataforma:
@@ -517,6 +528,10 @@ Para lograr una experiencia visual limpia y profesional, se aplicaron principios
   * **Fondos Protegidos en Custodia:** Detalle de la bóveda financiera y liberación progresiva por hitos.
   * **Trazabilidad e Inspección en Tiempo Real:** Acceso a reportes fotográficos, notas de insumos y avances validados.
   * **Asistencia Inteligente y Monitoreo Climático:** Explicación del sistema de alertas tempranas (heladas, sequías, plagas) respaldado por datos.
+ 
+<p align="center">
+  <img src="./assets/chapter-04/wireframe_trazabilidad.png" alt="Descripción de la imagen" width="800">
+</p>
 
 ##### 4. Sección Garantía de Pagos por Hitos (Diagrama de Proceso)
 * **Descripción:** Muestra de forma secuencial la línea de tiempo del modelo *Escrow*, conectando visualmente el texto explicativo con imágenes del trabajo en campo:
@@ -525,9 +540,17 @@ Para lograr una experiencia visual limpia y profesional, se aplicaron principios
   * **Hito 3:** Inspección de desarrollo y monitoreo climático en tiempo real.
   * **Hito 4:** Validación de cosecha y aprobación de calidad de producción.
   * **Hito 5:** Entrega final del lote y liberación del saldo restante.
+ 
+<p align="center">
+  <img src="./assets/chapter-04/wireframe_hitos.png" alt="Descripción de la imagen" width="800">
+</p>
 
 ##### 5. Sección de Testimonios (Confianza Respaldada por Resultados)
 * **Descripción:** Bloque de prueba social organizado en tres tarjetas verticales. Presenta testimonios reales de compradores B2B y productores (Carlos Mendoza Ríos, Miguel Huamán, Valeria Benavides), acompañados de su fotografía, rol, calificación en estrellas y métricas de éxito obtenidas al usar la plataforma.
+
+<p align="center">
+  <img src="./assets/chapter-04/wireframe_reseñas.png" alt="Descripción de la imagen" width="800">
+</p>
 
 ##### 6. Sección de Planes de Producción (Cuadro Comparativo)
 * **Descripción:** Muestra tres tarjetas de suscripción alineadas horizontalmente (*Básico*, *Pro* y *Empresarial*):
@@ -535,16 +558,32 @@ Para lograr una experiencia visual limpia y profesional, se aplicaron principios
   * **Pro ($123/mes - Destacado):** Diseñado para hasta 10 parcelas, evidencias GPS con validación Java, contratos PDF y alertas climáticas en vivo.
   * **Empresarial ($250/mes):** Para parcelas ilimitadas, integración API, gestor de cuenta dedicado y reportes personalizados.
   * Cada tarjeta incluye su respectivo botón de acción (*Empezar Ahora*, *Solicitar Demo*, *Contactar Ventas*).
+ 
+<p align="center">
+  <img src="./assets/chapter-04/wireframe_planes.png" alt="Descripción de la imagen" width="800">
+</p>
 
 ##### 7. Sección de Equipo (El Equipo Detrás de la Plataforma)
 * **Descripción:** Presenta al equipo técnico responsable de la arquitectura del producto. Incluye las tarjetas de los ingenieros de software del proyecto con su fotografía, nombre y rol profesional.
 
+<p align="center">
+  <img src="./assets/chapter-04/wireframe_equipo.png" alt="Descripción de la imagen" width="800">
+</p>
+
 ##### 8. Sección de Contacto y Solicitud de Propuesta Técnica
 * **Descripción:** Formulario directo integrado sobre una imagen de fondo de campo agrícola. Permite al usuario solicitar el desglose de costos e información del modelo de custodia ingresando Nombre, Apellidos, Correo Electrónico y Teléfono, finalizando con el botón *Recibir Información*.
+
+<p align="center">
+  <img src="./assets/chapter-04/wireframe_contacto.png" alt="Descripción de la imagen" width="800">
+</p>
+
 
 ##### 9. Pie de Página (Footer)
 * **Descripción:** Ubicado en el cierre de la página. Estructurado en cuatro columnas de navegación secundaria (*Navegación general*, *Servicios*, *Contacto & Horarios* de atención) junto con el logotipo de la marca y los derechos reservados de autor.
 
+<p align="center">
+  <img src="./assets/chapter-04/wireframe_footer.png" alt="Descripción de la imagen" width="800">
+</p>
 
 
 ### 4.3.2. Landing Page Mock-up
