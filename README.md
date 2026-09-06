@@ -48,9 +48,15 @@
 
 <div align="center">
 
-| Versión |    Fecha    |                Autor                |                                                                                                Descripción de modificación                                                                                                |
+| Versión | Fecha | Autor | Descripción de modificación |
 |:-------:|:----------:|:-----------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| [Versión] | [DD-MM-AAAA] | [Apellidos, Nombres] | [Descripción del cambio o aporte] |
+| AV1 | 06/09/2026 | Orellana Rodríguez, Mel Andree | Redacción de General Style Guidelines y Web Style Guidelines |
+| AV1 | 06/09/2026 | Orellana Rodríguez, Mel Andree | Definición de Organization, Labeling, Searching y Navigation Systems |
+| AV1 | 06/09/2026 | Orellana Rodríguez, Mel Andree | Configuración de SEO Tags y Meta Tags |
+| AV1 | 06/09/2026 | Orellana Rodríguez, Mel Andree | Elaboración de Wireframes y Mock-ups de Landing Page |
+| AV1 | 06/09/2026 | Orellana Rodríguez, Mel Andree | Diseño de Wireframes y Mock-ups de la aplicación web |
+| AV1 | 06/09/2026 | Orellana Rodríguez, Mel Andree | Creación de diagramas Wireflow y User Flow |
+| AV1 | 06/09/2026 | Orellana Rodríguez, Mel Andree | Desarrollo del prototipo interactivo de la aplicación web |
 
 </div>
 
