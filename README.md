@@ -195,7 +195,7 @@ El proceso de colaboración en el informe se realizó mediante commits constante
 
 
 
-# Student Outcome
+# Student Outcome 3
 
 <div align="center">
   <table style="width:100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px;">
@@ -209,29 +209,35 @@ El proceso de colaboración en el informe se realizó mediante commits constante
     <tbody>
       <tr>
         <td style="border: 1px solid #dddddd; padding: 10px; font-weight: bold; vertical-align: top;">
-          Trabaja en equipo para proporcionar liderazgo en forma conjunta.
+         Comunica oralmente con efectividad a diferentes rangos de audiencia.
         </td>
         <td style="border: 1px solid #dddddd; padding: 10px; vertical-align: top;">
           <ul>
-            <li><b>[Entrega] - [Nombre del Integrante]:</b> [Descripción de la acción realizada]</li>
+            <li><b>AV1 - Mel Andree Orellana Rodriguez:</b> Presentación oral del avance del Capítulo 4 enfocado en el diseño de interfaces UI/UX para la plataforma "ALLPATEK", adaptando el vocabulario técnico para audiencias con perfil agrícola (agricultores) y comercial (comerciantes B2B) durante la demostración de los prototipos interactivos.</li>
+             <li><b>AV1 - Atauje Barreto, Alexander Sebastián:</b> contenido </li>
+            <li><b>AV1 - Egocheaga Suyo, Miguel Angel:</b> contenido </li>
+            <li><b>AV1 - Raymundo Villarroel, Abigail Nadhim:</b> contenido </li>
+            <li><b>AV1 - Vera Solsol, Nayely Macarena:</b> contenido </li>
           </ul>
         </td>
         <td style="border: 1px solid #dddddd; padding: 10px; vertical-align: top;">
-          [Conclusión sobre el criterio]
-        </td>
+Se demostró capacidad para exponer y sustentar de manera clara las soluciones técnicas y de diseño del proyecto ante diversas audiencias, adaptando el lenguaje técnico según el perfil de los interlocutores (evaluadores, agricultores y comerciantes B2B) y defendiendo eficazmente las decisiones del sistema.        </td>
       </tr>
       <tr>
         <td style="border: 1px solid #dddddd; padding: 10px; font-weight: bold; vertical-align: top;">
-          Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.
+          Comunica por escrito con efectividad a diferentes rangos de audiencia
         </td>
         <td style="border: 1px solid #dddddd; padding: 10px; vertical-align: top;">
           <ul>
-            <li><b>[Entrega] - [Nombre del Integrante]:</b> [Descripción de la acción realizada]</li>
+            <li><b>AV1 - Mel Andree Orellana Rodriguez:</b> Redacté y estructuré los entregables escritos correspondientes al diseño de interfaces UI/UX de la plataforma ALLPATEK, adaptando el lenguaje técnico para la documentación del sistema y elaborando explicaciones claras para los flujos de trabajo de agricultores y comerciantes. Además, documenté los avances del proyecto manteniendo un estándar accesible para la revisión del equipo y supervisores.</li>
+            <li><b>AV1 - Atauje Barreto, Alexander Sebastián:</b> contenido </li>
+            <li><b>AV1 - Egocheaga Suyo, Miguel Angel:</b> contenido </li>
+            <li><b>AV1 - Raymundo Villarroel, Abigail Nadhim:</b> contenido </li>
+            <li><b>AV1 - Vera Solsol, Nayely Macarena:</b> contenido </li>
           </ul>
         </td>
         <td style="border: 1px solid #dddddd; padding: 10px; vertical-align: top;">
-          [Conclusión sobre el criterio]
-        </td>
+Se evidenció rigor y claridad en la elaboración de la documentación técnica y entregables del proyecto, estructurando la información mediante estándares accesibles, documentación de interfaces y registros organizados que garantizan que el mensaje sea comprensible tanto para desarrolladores como para supervisores académicos.        </td>
       </tr>
     </tbody>
   </table>
